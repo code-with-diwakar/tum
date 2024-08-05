@@ -6,11 +6,12 @@
   <link href="./output.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body class="h-screen bg-cover bg-center" style="background-image: url(./svg/background.svg); ">
-  <div class="flex flex-col items-start justify-center ">
+<body class="h-screen bg-[length:3100px_800px] px-[5%] bg-center grid justify-center" style="background-image: url(./svg/background.svg); ">
+
+  <div class="grid grid-flow-col justify-between  ">
     
     <!-- Logo  -->
-    <div class="flex flex-col md:flex-row items-center mt-12 space-y-6 md:space-y-0 md:space-x-6 px-6 w-full max-w-4xl">
+    <div class="flex flex-col items-center  md:flex-row md:space-y-0 md:space-x-6 justify-center w-full px-4 md:px-6 lg:px-8 sm:items-center mr-10 ">  
       <svg class="size-60" data-name="w3_cert_badge2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
         <defs>
           <style>
@@ -52,52 +53,61 @@
         <path class="cls-4" d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"/>
         <path class="cls-4" d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"/>
       </svg>
-      <div class="mb-32 flex flex-col items-center space-x-4">
-        <h1 class="text-[#ffc0c7] text-xl font-bold w-full pl-12">W3Schools offers an Online Certification Program.</h1>
+      <!-- Button -->
+    <div class="flex justify-center  ">
+      <div class=" text-[#ffc0c7] font-semibold text-3xl ">
+        <h1>W3Schools offers an Online Certification Program.</h1>
         <br>
-        <p class="text-[#ffc0c7] text-xl font-bold w-full pl-12">The perfect solution for busy professionals who need to balance work, family, and your life.</p>
+        
+        
+        <p class="my-4 ">The perfect solution for busy professionals who need to balance work, family, and your life.</p>
         <br>
-        <p class="text-[#ffc0c7] text-xl semibold w-full pl-12">More than 50,000 certificates already issued!</p>
-      </div>
+
       
       
-      
-    </div>
+        <p>More than 50,000 certificates already issued!</p>
+        <br>
+        
+        
     
-    <!-- Button -->
-    <div class="py-6 px-4 md:px-20 lg:px-40 xl:px-80 w-full flex justify-center">
-      <button class="bg-green-500 text-white font-bold py-3 px-6 rounded inline-flex items-center hover:bg-orange-400">
-        <span>GET Certificate</span>
-        <svg class="w-5 h-5 ml-2 transition-transform duration-200 transform hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-      </button>
-    </div>
-    
+        <button class="bg-green-500 w-fit 'animate-[fade-in-down_1s_ease-in-out]' text-white font-normal border-solid border-2 border-sky-500  hover:bg-orange-400 mx-auto block md:mx-0">Generate Certificate</button>
+        
+
+         <!-- // <span class="text-center  text-sm">GET Certificate</span> -->
+          <!-- <svg class="w-5 ml-2 hover:animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg> -->
+        </button>
+      </div>  
+    </div>  
+    </div> 
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 p-4  h-screen px-14 mb-14">
-    <div class="px-9">
-      <svg class="size-28 " id="tnb-google-search-icon" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M11.8153 10.3439C12.6061 9.2673 13.0732 7.9382 13.0732 6.5C13.0732 2.91015 10.163 0 6.57318 0C2.98333 0 0.0731812 2.91015 0.0731812 6.5C0.0731812 10.0899 2.98333 13 6.57318 13C8.01176 13 9.3412 12.5327 10.4179 11.7415L10.4171 11.7422C10.4466 11.7822 10.4794 11.8204 10.5156 11.8566L14.3661 15.7071C14.7566 16.0976 15.3898 16.0976 15.7803 15.7071C16.1708 15.3166 16.1708 14.6834 15.7803 14.2929L11.9298 10.4424C11.8936 10.4062 11.8553 10.3734 11.8153 10.3439ZM12.0732 6.5C12.0732 9.53757 9.61075 12 6.57318 12C3.53561 12 1.07318 9.53757 1.07318 6.5C1.07318 3.46243 3.53561 1 6.57318 1C9.61075 1 12.0732 3.46243 12.0732 6.5Z" fill="black"/>
-      </svg>
-      <p class="text-red-800 font-bold text-3xl">Document your skills</p>
-      <p class="text-red-800 text-xl">Improve your career</p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 mt-40 ">
+    <div class="flex flex-col items-center justify-center text-xl md:text-base md:font-light ">
+        <svg class="size-14 xl:size-16 md:size-10" id="tnb-google-search-icon" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.8153 10.3439C12.6061 9.2673 13.0732 7.9382 13.0732 6.5C13.0732 2.91015 10.163 0 6.57318 0C2.98333 0 0.0731812 2.91015 0.0731812 6.5C0.0731812 10.0899 2.98333 13 6.57318 13C8.01176 13 9.3412 12.5327 10.4179 11.7415L10.4171 11.7422C10.4466 11.7822 10.4794 11.8204 10.5156 11.8566L14.3661 15.7071C14.7566 16.0976 15.3898 16.0976 15.7803 15.7071C16.1708 15.3166 16.1708 14.6834 15.7803 14.2929L11.9298 10.4424C11.8936 10.4062 11.8553 10.3734 11.8153 10.3439ZM12.0732 6.5C12.0732 9.53757 9.61075 12 6.57318 12C3.53561 12 1.07318 9.53757 1.07318 6.5C1.07318 3.46243 3.53561 1 6.57318 1C9.61075 1 12.0732 3.46243 12.0732 6.5Z" fill="black"/>
+        </svg>
+        <p class="text-red-800 font-bold text-3xl">Document your skills</p>
+        <p class="text-red-800 ">Improve your career</p>
     </div>
-    <div class="px-9">
-      <svg class="size-28" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" aria-hidden="true">
-        <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" fill="currentColor"/>
-      </svg>
-      <p class="text-red-800 font-bold text-3xl">Study at your own place</p>
-      <p class="text-red-700 text-xl">Save time and money</p>
+    <div class="flex flex-col items-center justify-center">
+        <svg class="size-14 xl:size-16 md:size-10" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512" aria-hidden="true">
+            <path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z" fill="currentColor"/>
+        </svg>
+        <p class="text-red-800 font-bold text-3xl">Study at your own place</p>
+        <p class="text-red-700 ">Save time and money</p>
     </div>
-    <div class="px-9">
-      <i class="  text-8xl my-5 fa fa-graduation-cap" aria-hidden="true"> </i>
-      <p class="text-red-800 font-bold text-3xl">Known brand</p>
-      <p class="text-red-800 text-xl">Trusted by top companies</p>
+    <div class="flex flex-col items-center justify-center ">
+        <i class="text-6xl  sm:text-4xl sm:my-4  fa fa-graduation-cap" aria-hidden="true"></i>
+        
+        <p class="text-red-800 font-bold text-3xl ">Known brand</p>
+        <p class="text-red-800 ">Trusted by top companies</p>
     </div>
-    
-  </div>
+</div>
+
+  
+  
   
  
 </body>
